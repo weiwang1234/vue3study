@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <p>{{ message }}</p>
-  </div>
-</template>
+    <div>
+      <p>{{ message }}</p>
+    </div>
+  </template>
   
   <script setup>
   defineProps({

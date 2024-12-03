@@ -1,12 +1,21 @@
+<!-- App.vue -->
 <template>
-  <div>
-    <h1>父组件</h1>
-    <childComponent :message="parentMessage" />
+  <div id="app">
+    <UserList />
   </div>
 </template>
 
-<script setup>
-import childComponent from './components/childComponent.vue';
+<script>
+import UserList from './components/UserList.vue';
 
-const parentMessage = '你好，子组件！11';
+export default {
+  name: 'App',
+  components: {
+    UserList
+  }
+};
 </script>
+
+<style>
+/* 样式可以根据需要添加 */
+</style>
